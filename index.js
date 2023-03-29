@@ -1,9 +1,10 @@
 import express from "express";
 
 const app = express();
+app.use(express.json());
 
-app.get("/", (req, res) => {
-  console.log(req);
+app.post("/", (req, res) => {
+  console.log(req.body);
 
   res.sendStatus(200);
 });
