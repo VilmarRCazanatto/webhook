@@ -8,7 +8,7 @@ app.get("/", (req, res) => {
   res.sendStatus(200);
 });
 
-app.listen(80, (err) => {
+app.listen(8080, (err) => {
   console.log("Server runnig...");
   console.log(err ?? "Sem erros");
 });
